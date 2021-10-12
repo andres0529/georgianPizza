@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgian Pizza</title>
+    <link rel="icon" href="img/pizzaDrawn.png">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="displayFlex">
+    <!--Column 1-->
+    <div id="col1" class="displayFlex flexColumn textCenter">
+        <header>
+            <img src="./img/a4.gif" alt="Logo Pizza" id="imgIconPizza">
+        </header>
+        <div>
+            <img src="img/pizzaDisplay.png" alt="pizza peperoni">
+        </div>
+
+        <footer>
+            <span>Assigment 2 - HTML,CSS & JS</span> <br>
+            <span>Email: 200491265@student.georgianc.on.ca</span> <br>
+            <span>Copyright © 2021 ANDRES All rights reserved - Elaborated by Andres Correa</span> <br>
+            <ul class="listStyleNone">
+                <li><a href="https://andres.myportfolio.com.co/" target="_blank"><img src="./img/briefcase.png"
+                            alt="My portfolio"></a></li>
+                <li><a href="https://www.linkedin.com/in/andres0529/" target="_blank"><img src="./img/linkedin.png"
+                            alt="Linkedin"></a></li>
+                <li><a href="https://www.instagram.com/andres0529/" target="_blank"><img src="./img/instagram.png"
+                            alt="Instagram"></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!--Column 2-->
+    <div id="col2" class="displayFlex">
+        <div>
+            <div class="textCenter">
+                <h1>LET'S ORDER YOUR PIZZA</h1>
+            </div>
+            <div class="formulary">
+                <form action="./src/form.php" method="GET">
+                    <fieldset class="displayFlex">
+                        <div id="sizeLeft">
+                            <span>Size:</span>
+                            <ul class="displayFlex listStyleNone" id="ulSize">
+                                <li> <input type="radio" id="small" name="size" value="HTML" checked>
+                                    <label for="small">Small</label>
+                                </li>
+                                <li> <input type="radio" id="medium" name="size" value="HTML">
+                                    <label for="medium">Medium</label>
+                                </li>
+                                <li> <input type="radio" id="large" name="size" value="HTML">
+                                    <label for="large">Large</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="textCenter" id="sizeRight">
+                            <img src="./img/pepperoni.png" alt="pizza" >
+                        </div>
+                    </fieldset>
+                    <fieldset class="displayFlex flexColumn" id="flavour">
+                        <span>Flavour:</span>
+                        <ul class="listStyleNone">
+                            <li> <input type="radio" id="pepperoniPizza" name="flavour" value="pepperoni"
+                                    checked>
+                                <label for="pepperoniPizza">Pepperoni</label>
+                            </li>
+                            <li> <input type="radio" id="cheessePizza" name="flavour" value="cheesse">
+                                <label for="cheessePizza">Cheesse</label>
+                            </li>
+                            <li> <input type="radio" id="garlicPizza" name="flavour" value="garlic">
+                                <label for="garlicPizza">Garlic</label>
+                            </li>
+                            <li> <input type="radio" id="greekPizza" name="flavour" value="greek">
+                                <label for="greekPizza">Greek</label>
+                            </li>
+                            <li> <input type="radio" id="europeanPizza" name="flavour" value="european">
+                                <label for="europeanPizza">European</label>
+                            </li>
+                            <li> <input type="radio" id="canadaPizza" name="flavour" value="canada">
+                                <label for="canadaPizza">Canada</label>
+                            </li>
+                            <li> <input type="radio" id="beefPizza" name="flavour" value="beef">
+                                <label for="beefPizza">Beef</label>
+                            </li>
+                            <li> <input type="radio" id="metLoversPizza" name="flavour" value="metLovers">
+                                <label for="metLoversPizza">Meat Lovers</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="displayFlex flexColumn">
+                        <span>Shape:</span>
+                        <select name="shape" id="shape">
+                            <option value="square">Square</option>
+                            <option value="round">Round</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="displayFlex flexColumn">
+                        <span>Quantity</span>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <br>
+                    </fieldset>
+                    <fieldset class="displayFlex flexColumn" id="form">
+                        <span class="textCenter">Where do you wish your pizza?</span>
+                        <div class="displayFlex flexRow">
+                            <div id="labels" class="displayFlex flexColumn">
+                                <label for="name">Name: </label>
+                                <label for="emailAddress">Email Address: </label>
+                                <label for="phone">Phone number: </label>
+                                <label for="address">Address</label>
+                            </div>
+                            <div id="inputs" class="displayFlex flexColumn">
+                                <input type="text" name="name" id="name" required>
+                                <input type="email" name="emailAddress" id="emailAddress" required>
+                                <input type="number" name="phone" id="phone" required>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="textCenter">
+                        <input type="submit" value="submit" id="button"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="src/drivers.js"></script>
+</body>
+</html>
